@@ -8,9 +8,13 @@ export class CreateProductDto {
   @IsNotEmpty({ message: 'Product Description cannot empty' })
   product_description: string;
 
+  @IsString()
+  @IsNotEmpty({ message: 'Product banner cannot empty' })
+  product_banner: string;
+
   @IsNumber()
   @IsNotEmpty({ message: 'Product Price cannot empty' })
-  product_price: number;
+  product_price: string;
 
   @IsNumber()
   @IsNotEmpty({ message: 'Rating cannot empty' })

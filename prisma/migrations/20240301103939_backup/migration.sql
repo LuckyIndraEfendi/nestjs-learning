@@ -17,6 +17,7 @@ CREATE TABLE `tbl_product` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `product_name` VARCHAR(191) NOT NULL,
     `product_description` VARCHAR(191) NOT NULL,
+    `product_banner` VARCHAR(191) NOT NULL,
     `product_price` INTEGER NOT NULL,
     `rating` INTEGER NOT NULL,
     `author_id` INTEGER NOT NULL,
